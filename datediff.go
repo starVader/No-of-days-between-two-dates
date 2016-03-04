@@ -7,15 +7,6 @@ type Date struct {
 	d,m,y int
 }
 
-
-func countleap(d Date) int {
-	year := d.y
-	if d.m <= 2 {
-		year--
-	}
-	return (year/4 - year/100 + year/400)
-}
-
 func isleapyear(y int) bool {
 	if y % 400 == 0 {
 		return true
